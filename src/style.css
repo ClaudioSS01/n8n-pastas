@@ -1,0 +1,58 @@
+#folder-view-container {
+  color: #C3C9D5;
+}
+
+.divider {
+  border-top: 1px #9398A0 solid;
+  margin: 12px;
+}
+
+#folder-list {
+  list-style-type: none;
+  padding: 0 12px;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+#folder-list::-webkit-scrollbar {
+  width: 4px !important; /* スクロールバーの幅 */
+}
+
+#folder-list::-webkit-scrollbar-track {
+  background: #414244 !important; /* スクロールバーの背景色 */
+}
+
+#folder-list::-webkit-scrollbar-thumb {
+  background: #888 !important; /* スクロールバーのつまみの色 */
+  border-radius: 4px !important; /* スクロールバーのつまみの角丸 */
+}
+
+#folder-list::-webkit-scrollbar-thumb:hover {
+  background: #555 !important; /* スクロールバーのつまみのホバー時の色 */
+}
+
+.folder-list-item {
+  cursor: pointer;
+  padding: 20px 12px;
+  height: 40px;
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.folder-list-item.is-active {
+  background-color: #525456;
+}
+
+.folder-list-item-icon {
+  margin-right: 13px;
+  display: inline-block;
+}
+
+.folder-list-item-name {
+  font-size: 14px;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+}
